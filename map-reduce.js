@@ -1,6 +1,6 @@
 // map
 
-
+/*
 const beatles = ['John', 'Paul', 'Ringo'];
 
 // const newArray = beatles.map(function (name) {
@@ -142,11 +142,11 @@ const sum = product.reviews.reduce(function (total, review) {
 
 // filter
 
-const numbers = [1, 2, 3, 4, 5]
+// const numbers = [1, 2, 3, 4, 5]
 
-const evenNumbers = numbers.filter(function (number) {
-    return number % 2 === 0
-})
+// const evenNumbers = numbers.filter(function (number) {
+//     return number % 2 === 0
+// })
 
 // console.log(evenNumbers);
 
@@ -224,7 +224,7 @@ const word = 'abcbd';
 // reverse a word in one go
 const reversed = word.split('').reverse().join('')
 
-console.log(reversed);
+// console.log(reversed);
 
 /*
 // change the word to an array -> ['a', 'b', 'c', 'd']
@@ -234,8 +234,29 @@ const str = wordAsArray.join('');
 */
 
 
+// sort
 
+const numbers = [22, 23, 68, 1, 99, 0, 64, 18, 122];
 
+function ascending(a, b) {
+    if (a > b) {
+        return 3;
+    }
+    if (a === b) {
+        return 0;
+    }
+    if (a < b) {
+        return - 3;
+    }
+    // return a - b;
+}
+
+// const sorted = numbers.sort(function (a, b) {
+//     return a - b;
+// })
+const sorted = numbers.sort(ascending)
+
+console.log(sorted);
 
 
 
